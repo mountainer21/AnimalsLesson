@@ -1,12 +1,12 @@
 import kotlin.random.Random
 
 class AppDataBaseMock {
-    val list = mutableListOf<People>()
+    val list = mutableListOf<Animal>()
 
     init {
         for (i in 0..10){
-            val people = People(id = i, name = "name$i", age = i + Random.nextInt(50))
-            list.add(people)
+            val animal = Animal(id = i, name = "name$i", size = "size$i", habitat = "habitat$i")
+            list.add(animal)
         }
     }
 }
